@@ -16,5 +16,14 @@ function addTodo() {
         li.textContent = todoText;
         todoList.appendChild(li);
         todoInpurt.value = '';
+        
+        // Create delete button
+        const delBtn = document.createElement('button');
+        delBtn.textContent = 'Delete';
+        delBtn.classList.add('delete-btn');
+        delBtn.onclick = function() {
+            todoList.removeChild(li);
+        }
+        li.appendChild(delBtn);
     }
 }
