@@ -49,3 +49,12 @@ li {
     justify-content: space-between;
     align-items: center;
 }
+@media (max-width: 450px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+    input[type="text"], button {
+        font-size: 14px;
+    }
+}
